@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as s,o as t,e as c}from"./index-BYybgal4.js";const l={},r={class:"w-full min-h-[calc(100vh-80px)] flex flex-col items-center px-6 py-10"};function n(a,e){return t(),s("div",r,[...e[0]||(e[0]=[c("div",{class:"w-full"},null,-1)])])}const m=o(l,[["render",n]]);export{m as default};
