@@ -13,6 +13,7 @@ import {
 } from '../atoms'
 import AtomDragdrop from '../atoms/AtomDragdrop.vue'
 
+
 /* Props */
 const props = defineProps({
     startIndex: { type: Number, default: 0 },
