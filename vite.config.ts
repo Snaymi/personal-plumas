@@ -5,9 +5,8 @@ import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? "/personal-plumas/" : "/",
+  base: "/personal-plumas/", // ⚠️ IMPORTANTE
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
