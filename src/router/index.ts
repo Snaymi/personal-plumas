@@ -144,7 +144,7 @@ const routes = [
     component: () => import("@/components/pages-client/ClientDashboard.vue"),
     meta: { layout: "ClientHeader" },
   },
-   {
+  {
     path: "/bankstatement",
     name: "bankstatement",
     component: () => import("@/components/pages-client/BankStatement.vue"),
@@ -153,23 +153,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/personal-plumas/"),
   routes,
 });
 
-// router.beforeEach((to, from, next) => {
-//   const isPublic = to.meta.public === true
-//   const requiresAuth = to.meta.requiresAuth === true
-
-//   // exemplo simples: checagem baseada em localStorage; substitua pela sua store
-//   const token = localStorage.getItem('auth_token')
-//   const isAuthenticated = !!token
-
-//   if (requiresAuth && !isAuthenticated) {
-//     return next({ name: 'Login', query: { redirect: to.fullPath } })
-//   }
-
-//   return next()
-// })
 export { routes };
 export default router;
